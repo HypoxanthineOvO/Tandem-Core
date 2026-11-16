@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "product": "tandem-core",
+  "version": "0.1.0",
+  "target": "linux-x64",
+  "nodeMajor": 24,
+  "pnpmVersion": "11.28.5",
+  "installArgs": [
+    "install",
+    "--filter",
+    "@deepseek-ai/dsh...",
+    "--frozen-lockfile",
+    "--ignore-scripts"
+  ],
+  "postInstall": [
+    {
+      "command": "node",
+      "args": [
+        "packages/subprocess/subprocess-local/scripts/ensure-spawn-helper.mjs"
+      ]
+    }
+  ],
+  "entrypoint": "apps/cli/lib/bin.js",
+  "startArgs": [
+    "web",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "${PORT}",
+    "--no-open"
+  ],
+  "dataHomeEnv": "DSH_HOME"
+}

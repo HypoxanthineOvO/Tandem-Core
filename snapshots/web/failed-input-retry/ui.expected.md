@@ -1,0 +1,26 @@
+- banner:
+  - navigation "Session hierarchy": workspace
+  - text: Standard mode
+  - button "More actions"
+  - button "Open right sidebar"
+  - tablist:
+    - tab "Chat" [selected]
+    - tab "Trajectory"
+- status: Failed
+- button "Failed" [disabled]
+- status:
+  - text: This turn failedMissing account model
+  - code: UNKNOWN
+- list:
+  - listitem:
+    - text: Reply with a one-sentence description of event sourcing, then stop.
+    - button "Edit queued message"
+    - button "Remove queued message"
+    - button "Retry this message": Retry
+- textbox "Message or run a task, / commands, @ files or sessions"
+- button "Add files or run commands"
+- 'button "Access mode, current: Workspace Write"': Workspace Write
+- 'button "Current mode: Work mode. Switch to Direct mode."': Work mode
+- button "Select model, current DeepSeek-V4-Flash": DeepSeek-V4-Flash
+- button "Send message" [disabled]
+- text: 1 turns 1 steps

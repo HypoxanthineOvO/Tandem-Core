@@ -1,0 +1,112 @@
+name: Tandem Core Web packages
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/tandem-core.yml'
+      - 'apps/**'
+      - 'packages/**'
+      - 'native/system/**'
+      - 'vendor/**'
+      - 'scripts/package-core.py'
+      - 'scripts/smoke-core.py'
+      - 'scripts/smoke-core.mjs'
+      - 'tandem-install.json'
+      - 'docs/INSTALL-CORE.md'
+      - 'docs/TANDEM-CORE-RESULT.md'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - 'pnpm-workspace.yaml'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tandem-core.yml'
+      - 'apps/**'
+      - 'packages/**'
+      - 'native/system/**'
+      - 'vendor/**'
+      - 'scripts/package-core.py'
+      - 'scripts/smoke-core.py'
+      - 'scripts/smoke-core.mjs'
+      - 'tandem-install.json'
+      - 'docs/INSTALL-CORE.md'
+      - 'docs/TANDEM-CORE-RESULT.md'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - 'pnpm-workspace.yaml'
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - target: linux-x64
+            runner: ubuntu-latest
+          - target: darwin-arm64
+            runner: macos-15
+          - target: darwin-x64
+            runner: macos-15-intel
+          - target: win32-x64
+            runner: windows-latest
+    runs-on: ${{ matrix.runner }}
+    defaults:
+      run:
+        shell: ${{ matrix.target == 'win32-x64' && 'pwsh' || 'bash' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.28.5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install build dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Build Core assets
+        run: pnpm run build
+      - name: Build macOS system addon
+        if: startsWith(matrix.target, 'darwin-')
+        run: pnpm --dir native/system build:native
+      - name: Build Linux system binaries
+        if: matrix.target == 'linux-x64'
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -yq musl-tools
+          pnpm --dir native/system build:native
+      - name: Package target
+        run: python scripts/package-core.py ${{ matrix.target }}
+      - name: Assert macOS Node and packaged addon architecture
+        if: startsWith(matrix.target, 'darwin-')
+        run: |
+          expected='${{ matrix.target }}'
+          node -e "const expected = process.argv[1].slice('darwin-'.length); if (process.platform !== 'darwin' || process.arch !== expected) throw new Error('Expected darwin/' + expected + ', got ' + process.platform + '/' + process.arch)" "$expected"
+          stage="$(mktemp -d)"
+          trap 'rm -rf "$stage"' EXIT
+          tar -xzf "artifacts/tandem-core-0.1.0-$expected.tar.gz" -C "$stage" "tandem-core-0.1.0/native/system/packages/$expected/bin/system.node"
+          description="$(file "$stage/tandem-core-0.1.0/native/system/packages/$expected/bin/system.node")"
+          printf '%s\n' "$description"
+          case "$expected" in
+            darwin-x64) [[ "$description" == *Mach-O* && "$description" == *x86_64* && "$description" != *arm64* ]] ;;
+            darwin-arm64) [[ "$description" == *Mach-O* && "$description" == *arm64* && "$description" != *x86_64* ]] ;;
+          esac
+      - name: Fresh install and Web smoke
+        run: node scripts/smoke-core.mjs artifacts/tandem-core-0.1.0-${{ matrix.target }}.tar.gz
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tandem-core-0.1.0-${{ matrix.target }}
+          path: |
+            artifacts/tandem-core-0.1.0-${{ matrix.target }}.tar.gz
+            artifacts/tandem-core-0.1.0-${{ matrix.target }}.tar.gz.sha256
+          if-no-files-found: error
+          retention-days: 30

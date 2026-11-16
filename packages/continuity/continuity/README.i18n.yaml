@@ -1,0 +1,31 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/continuity/continuity/README.md
+/:
+  en: 94b07ef93aad0356
+  zh: 0ae25ccece59b52f
+/deepseek-ai-dsh-continuity:
+  en: 3169533fd34c3b61
+  zh: 8cbe1647141b8a90
+/deepseek-ai-dsh-continuity/summary:
+  en: 46a762318ef93169
+  zh: 4766656772496cdf
+/deepseek-ai-dsh-continuity/model-experience:
+  en: 215e7ba838619b7b
+  zh: 215e7ba838619b7b
+/deepseek-ai-dsh-continuity/model-experience/what-the-model-sees:
+  en: c57b3c7fa53f3d34
+  zh: 17e5f0f85fd3640c
+/deepseek-ai-dsh-continuity/model-experience/token-effect:
+  en: 93c8504410b03a01
+  zh: 2d4b54d8cba2ab0f
+/deepseek-ai-dsh-continuity/model-experience/kv-cache-effect:
+  en: e4cee1cd54b42e21
+  zh: 32024fed2897c247
+/deepseek-ai-dsh-continuity/known-limitations-and-deferred-work:
+  en: e2fb9d8c1de4f082
+  zh: f73cfa204b76e023
+/deepseek-ai-dsh-continuity/source-map:
+  en: 76ea127f25e4529d
+  zh: 9ec2f5a3eac16313

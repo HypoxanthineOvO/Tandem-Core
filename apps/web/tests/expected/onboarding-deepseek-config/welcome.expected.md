@@ -1,0 +1,5 @@
+- dialog "欢迎使用 Tandem":
+  - heading "欢迎使用 Tandem" [level=2]
+  - paragraph: Tandem 是基于 DeepSeek Harness 构建的多模型 Agent 团队扩展，目前处于早期预览阶段。
+  - paragraph: 请前往 设置 → 模型 填写 API key，开始使用。
+  - button "继续"

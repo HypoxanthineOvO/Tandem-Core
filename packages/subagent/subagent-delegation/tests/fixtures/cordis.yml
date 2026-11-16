@@ -1,0 +1,32 @@
+- id: runtime
+  name: 'cordis:testRuntime'
+- id: presets
+  name: 'cordis:presets'
+  config:
+    default: writable
+- id: subagents
+  name: 'cordis:subagents'
+- id: delegation
+  name: 'cordis:delegation'
+- id: fork
+  name: 'cordis:fork'
+  config:
+    providerName: fork
+- id: writable
+  name: 'cordis:preset'
+  config:
+    id: writable
+    plugins:
+      - name: 'cordis:testTools'
+        config:
+          names: [read, write, edit, bash]
+          prompt: Writable parent persona
+- id: readonly
+  name: 'cordis:preset'
+  config:
+    id: subagent-readonly
+    plugins:
+      - name: 'cordis:testTools'
+        config:
+          names: [read]
+          prompt: Readonly child persona

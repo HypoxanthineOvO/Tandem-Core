@@ -1,0 +1,5 @@
+- insert:
+    - id: await-sdk-subagents
+      name: '../../../packages/test-support/session-snapshot/tests/fixtures/subagent-settlement-barrier.ts'
+    - id: subagent-route-equivalence
+      name: '../../../packages/test-support/session-snapshot/tests/fixtures/subagent-route-equivalence.ts'

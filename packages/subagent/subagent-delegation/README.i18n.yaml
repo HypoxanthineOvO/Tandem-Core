@@ -1,0 +1,52 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/subagent/subagent-delegation/README.md
+/:
+  en: a4f29f4ced899fab
+  zh: 2f5a77ff4fd10765
+/deepseek-ai-dsh-subagent-delegation:
+  en: 2ca401e63d798631
+  zh: 5918e8cc5d5b35bd
+/deepseek-ai-dsh-subagent-delegation/summary:
+  en: 492a20f241431227
+  zh: 882994a0592c050f
+/deepseek-ai-dsh-subagent-delegation/table-of-contents:
+  en: d152484eb41ac6b4
+  zh: 09388d293f9be9cb
+/deepseek-ai-dsh-subagent-delegation/use-this-package:
+  en: 11d1a8e8e8cacbe9
+  zh: 5520148599fa42ac
+/deepseek-ai-dsh-subagent-delegation/use-this-package/register-and-dispatch:
+  en: ec56a871a46a7089
+  zh: 8d6a960ad49607fd
+/deepseek-ai-dsh-subagent-delegation/use-this-package/persist-identity-before-the-first-request:
+  en: a43b5240091ff778
+  zh: 0975ae66c9ada373
+/deepseek-ai-dsh-subagent-delegation/understand-the-implementation:
+  en: 235a8de0bbad6e65
+  zh: 10d847279805ac2c
+/deepseek-ai-dsh-subagent-delegation/further-exploration:
+  en: f76c3ba092a3bbeb
+  zh: 86cbafd8f35cc784
+/deepseek-ai-dsh-subagent-delegation/model-experience:
+  en: 215e7ba838619b7b
+  zh: a311da3843709f90
+/deepseek-ai-dsh-subagent-delegation/model-experience/delegated-child-input:
+  en: 5db6383682c89b0e
+  zh: 6a275a42766b1373
+/deepseek-ai-dsh-subagent-delegation/model-experience/delegated-child-input/what-the-model-sees:
+  en: 277d1f776caf23e3
+  zh: ce09837eca689a6d
+/deepseek-ai-dsh-subagent-delegation/model-experience/delegated-child-input/token-effect:
+  en: d0fe99c87b74bd6a
+  zh: 2bc63bd024c5854a
+/deepseek-ai-dsh-subagent-delegation/model-experience/delegated-child-input/kv-cache-effect:
+  en: 8791e9b599e9109f
+  zh: 444944ed84fc4560
+/deepseek-ai-dsh-subagent-delegation/known-limitations-and-deferred-work:
+  en: 8dfe461c7892bc8f
+  zh: d4e4130969b3d093
+/deepseek-ai-dsh-subagent-delegation/known-limitations-and-deferred-work/dev-note:
+  en: e67f633dc6fe7773
+  zh: e88aeb617ffb74ea

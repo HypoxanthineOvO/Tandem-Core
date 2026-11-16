@@ -1,0 +1,11 @@
+- banner:
+  - button "Open right sidebar"
+- text: Work in tandem. Built on DeepSeek Harness
+- button "Choose workspace": workspace
+- button "Standard mode"
+- textbox "Describe what you want to build, / commands, @ files or sessions"
+- button "Add files or run commands"
+- 'button "Access mode, current: Workspace Write"': Workspace Write
+- 'button "Current mode: Work mode. Switch to Direct mode."': Work mode
+- button "Select model, current DeepSeek-V4-Flash": DeepSeek-V4-Flash
+- button "Send message" [disabled]

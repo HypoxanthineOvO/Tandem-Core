@@ -1,0 +1,269 @@
+{
+  "sourceSession": "589f855e-c03c-4c7b-94e8-14aac43b47e0",
+  "images": [
+    {
+      "event": 122,
+      "eventType": "tool/result",
+      "attachment": {
+        "attachmentId": "sha256:4e6924d6c5bdf314e5134d8385ae9695625025854cedef99d7a282f868534043",
+        "mediaType": "image/png",
+        "bytes": 905331,
+        "width": 2142,
+        "height": 1020,
+        "name": "s1.png"
+      }
+    },
+    {
+      "event": 123,
+      "eventType": "tool/result",
+      "attachment": {
+        "attachmentId": "sha256:88821957b9e69fee7138809894ecd1dda3a8c15867689b6fe88fa4f75334b544",
+        "mediaType": "image/png",
+        "bytes": 907779,
+        "width": 2142,
+        "height": 1020,
+        "name": "s2.png"
+      }
+    },
+    {
+      "event": 402,
+      "eventType": "tool/result",
+      "attachment": {
+        "attachmentId": "sha256:7faa40ffdaa162f00aa6dfadf0c7fac3ec3aef83b2e3cbada6159fef4b31cafa",
+        "mediaType": "image/jpeg",
+        "bytes": 184644,
+        "width": 1428,
+        "height": 1100,
+        "name": "overview.png"
+      }
+    },
+    {
+      "event": 681,
+      "eventType": "tool/result",
+      "attachment": {
+        "attachmentId": "sha256:0f32f0261fca28b3377658122522c66fd9d9806dfdd117965535e586ea1b664e",
+        "mediaType": "image/jpeg",
+        "bytes": 317643,
+        "width": 2136,
+        "height": 1624,
+        "name": "overview.png"
+      }
+    },
+    {
+      "event": 688,
+      "eventType": "tool/result",
+      "attachment": {
+        "attachmentId": "sha256:b390b6acbc9a6e13c5cf304cf5f016fcea52f0777c02b4a5d4c7a416941af2fc",
+        "mediaType": "image/png",
+        "bytes": 68093,
+        "width": 945,
+        "height": 532,
+        "name": "page-03.png"
+      }
+    },
+    {
+      "event": 800,
+      "eventType": "tool/result",
+      "attachment": {
+        "attachmentId": "sha256:523ddbfe8ed879ef4e4d798b8ac8115fbeede795db9eb0ba1ad6602968ebcfcb",
+        "mediaType": "image/jpeg",
+        "bytes": 411926,
+        "width": 2435,
+        "height": 1656,
+        "name": "comparison.png"
+      }
+    },
+    {
+      "event": 801,
+      "eventType": "tool/result",
+      "attachment": {
+        "attachmentId": "sha256:4557790e9fb3e34cdd58265c7799ef3421d9f78445e0c1a9854d4696f7463b83",
+        "mediaType": "image/jpeg",
+        "bytes": 467019,
+        "width": 1917,
+        "height": 2186,
+        "name": "overview.png"
+      }
+    },
+    {
+      "event": 971,
+      "eventType": "tool/result",
+      "attachment": {
+        "attachmentId": "sha256:513f220f10e5c038a2be351dc0b4f3895c8077c8faf2ccbe89fab0f056d659a2",
+        "mediaType": "image/jpeg",
+        "bytes": 234362,
+        "width": 3152,
+        "height": 828,
+        "name": "title-marker.png"
+      }
+    },
+    {
+      "event": 972,
+      "eventType": "tool/result",
+      "attachment": {
+        "attachmentId": "sha256:24b2c9d5d484d104bb2ada0dee2c5011340348e08a79e67eb8f6fce5f8733ced",
+        "mediaType": "image/jpeg",
+        "bytes": 147802,
+        "width": 1646,
+        "height": 820,
+        "name": "cover-before-after.png"
+      }
+    },
+    {
+      "event": 973,
+      "eventType": "tool/result",
+      "attachment": {
+        "attachmentId": "sha256:45f0b683bef1b2a374f065da3ee010190dcda2c6bee00ff8882cebd857eb3049",
+        "mediaType": "image/jpeg",
+        "bytes": 491468,
+        "width": 2828,
+        "height": 1482,
+        "name": "comparison.png"
+      }
+    },
+    {
+      "event": 994,
+      "eventType": "tool/result",
+      "attachment": {
+        "attachmentId": "sha256:f51ec69ea84c49468c5ec1e14866b93dce04c6d37268cd971c413b5ee7a53858",
+        "mediaType": "image/webp",
+        "bytes": 113976,
+        "width": 1748,
+        "height": 824,
+        "name": "overview-layouts.png"
+      }
+    },
+    {
+      "event": 1007,
+      "eventType": "tool/result",
+      "attachment": {
+        "attachmentId": "sha256:247ec1ef98e08b2b3302dcd8925e2a492589599a20c74acb9340f9b6339400f3",
+        "mediaType": "image/png",
+        "bytes": 38208,
+        "width": 504,
+        "height": 284,
+        "name": "lab-03.png"
+      }
+    },
+    {
+      "event": 1197,
+      "eventType": "tool/result",
+      "attachment": {
+        "attachmentId": "sha256:f8cd4a6da51bf516730a9c0d96ca8e14a942709c868b156c32c0d08affb393c9",
+        "mediaType": "image/png",
+        "bytes": 80092,
+        "width": 725,
+        "height": 978,
+        "name": "charts3.png"
+      }
+    },
+    {
+      "event": 1277,
+      "eventType": "tool/result",
+      "attachment": {
+        "attachmentId": "sha256:3f0b6834e1edeb0414b864cef7e97f74d4722cf55a28776bcc6fef9a8848cc8f",
+        "mediaType": "image/webp",
+        "bytes": 198436,
+        "width": 1560,
+        "height": 846,
+        "name": "imgs.png"
+      }
+    },
+    {
+      "event": 1375,
+      "eventType": "tool/result",
+      "attachment": {
+        "attachmentId": "sha256:0d3df81fdff5e9d0ab804a1a59210700ac1046ab931890885f2948399c1f7d0e",
+        "mediaType": "image/png",
+        "bytes": 86066,
+        "width": 1010,
+        "height": 642,
+        "name": "diagrams.png"
+      }
+    },
+    {
+      "event": 1414,
+      "eventType": "tool/result",
+      "attachment": {
+        "attachmentId": "sha256:5b688cb19b9dd11373f345d8224b3a5672842885ff11f8662d0ec8da0ec203ed",
+        "mediaType": "image/png",
+        "bytes": 362210,
+        "width": 1536,
+        "height": 657,
+        "name": "overview-ai-systems-and-chips-dark.png"
+      }
+    },
+    {
+      "event": 1477,
+      "eventType": "agent/inbox/spliced",
+      "attachment": {
+        "attachmentId": "sha256:7ca3c0fc69b0e5e168e388b08c6ab1da57fd49e26989d546fcd6db87d8f86592",
+        "mediaType": "image/png",
+        "bytes": 77104,
+        "width": 650,
+        "height": 298,
+        "name": "image.png"
+      }
+    },
+    {
+      "event": 1481,
+      "eventType": "user/message",
+      "attachment": {
+        "attachmentId": "sha256:7ca3c0fc69b0e5e168e388b08c6ab1da57fd49e26989d546fcd6db87d8f86592",
+        "mediaType": "image/png",
+        "bytes": 77104,
+        "width": 650,
+        "height": 298,
+        "name": "image.png"
+      }
+    },
+    {
+      "event": 1529,
+      "eventType": "tool/result",
+      "attachment": {
+        "attachmentId": "sha256:82a7c2d10f2b476643caa578cfccad042bc4903a79c00d8fe9c6f6abfa3d35e3",
+        "mediaType": "image/jpeg",
+        "bytes": 340921,
+        "width": 2051,
+        "height": 2044,
+        "name": "title-marker-options.png"
+      }
+    },
+    {
+      "event": 1551,
+      "eventType": "tool/result",
+      "attachment": {
+        "attachmentId": "sha256:3f0a6863b346aba636bd8524b2d2eeb37406b8a4d938dcfc1887bbc2c3158fa5",
+        "mediaType": "image/png",
+        "bytes": 557502,
+        "width": 1544,
+        "height": 1105,
+        "name": "overview-industry-and-history-dark.png"
+      }
+    },
+    {
+      "event": 1633,
+      "eventType": "tool/result",
+      "attachment": {
+        "attachmentId": "sha256:deb60c6320b9b104f243eea838f5785fe0d3464171ccd60d10ee0ce8c27cfb4b",
+        "mediaType": "image/png",
+        "bytes": 1277844,
+        "width": 1158,
+        "height": 3072,
+        "name": "overview.png"
+      }
+    },
+    {
+      "event": 1634,
+      "eventType": "tool/result",
+      "attachment": {
+        "attachmentId": "sha256:f4b5fff4303ca9ece915907945690279d2190bc61b0dcd2e64bd9f655fb8b999",
+        "mediaType": "image/png",
+        "bytes": 22804,
+        "width": 1260,
+        "height": 157,
+        "name": "title-eyebrow-light.png"
+      }
+    }
+  ]
+}

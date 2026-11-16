@@ -1,0 +1,49 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/api/session-controller/README.md
+/:
+  en: 82789442228fc62a
+  zh: f1d511ad838187de
+/session-controller:
+  en: c7a4c58ea6d3437b
+  zh: 45c2b472a074bb1b
+/session-controller/summary:
+  en: 7da0ed9b4a6a49cf
+  zh: 3208e04299819e1a
+/session-controller/table-of-contents:
+  en: 1fdf707322fb6996
+  zh: 0204f7e9d4aa3cce
+/session-controller/use-this-package:
+  en: c8d91a22d28cc1f7
+  zh: ee705adb829cf88c
+/session-controller/client-references:
+  en: 41bdda1ac32df558
+  zh: aa5d0e325924066b
+/session-controller/session-media-references:
+  en: 266ab2b1e2fec542
+  zh: b3450ae28a1e0baf
+/session-controller/configuration:
+  en: 5ae2b340c630897f
+  zh: 1ffbd61ecf302ec2
+/session-controller/model-experience:
+  en: 2651ec77d0e61811
+  zh: 3e9e8190530014be
+/session-controller/model-experience/conversational-mode:
+  en: 4c8de33ed176910d
+  zh: 271f7c740e690281
+/session-controller/model-experience/conversational-mode/what-the-model-sees:
+  en: 65d75968a6ce3f08
+  zh: 0fe3e7b8b7d915ec
+/session-controller/model-experience/conversational-mode/token-effect:
+  en: bdc233d557c13743
+  zh: 6e21d4eebdcab92e
+/session-controller/model-experience/conversational-mode/kv-cache-effect:
+  en: b44fbec2094595a5
+  zh: 53c039fb343c8a33
+/session-controller/known-limitations-and-deferred-work:
+  en: 5db0f9f69a8be926
+  zh: 6ba1cc4a3850fcbc
+/session-controller/known-limitations-and-deferred-work/dev-note:
+  en: de32472e2a6eba48
+  zh: b73472a5bb3adf52

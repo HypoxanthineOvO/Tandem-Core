@@ -1,0 +1,113 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`appends confirmed field values and redacted branch details to a main request without changing its system or tools > confirmed decision details 1`] = `
+[
+  [
+    {
+      "text": "待带入决议（字段值：前 → 后）：
+- 决议（版本 1）；来源支线："pending-branch"
+  "acceptance.alpha"：null → "通过A"
+  "acceptance.metadata"：null → {"api_key":"[已脱敏]","status":"已核对"}
+  "acceptance.long"：null → "说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说…（已截断）
+  原因："用户确认字段，并同意带回主线"",
+      "type": "text",
+    },
+  ],
+  [
+    {
+      "text": "支线有新的待带入决议，请核对字段改动。",
+      "type": "text",
+    },
+  ],
+]
+`;
+
+exports[`keeps the human child turn local after main UI selection: ordinary direct question > human request context 1`] = `
+[
+  [
+    {
+      "text": "Current runtime context. This snapshot supersedes earlier runtime-context snapshots.
+
+You are a delegated subagent: your permission scope was fixed when you were started and cannot be widened from inside this session — operations that require approval are rejected automatically. When the task needs access beyond that scope, do not retry the denied operation; state the limitation in your reply so the delegating agent can handle it.",
+      "type": "text",
+    },
+  ],
+  [
+    {
+      "text": "[host request context]",
+      "type": "text",
+    },
+  ],
+  [
+    {
+      "text": "受管支线已连接主线。当前连续性账本版本：0。用户确认“带回主线”后再提交决议。",
+      "type": "text",
+    },
+  ],
+  [
+    {
+      "text": "ordinary direct question",
+      "type": "text",
+    },
+  ],
+]
+`;
+
+exports[`keeps the human child turn local after main UI selection: ordinary direct question > parent send rejection 1`] = `
+[
+  {
+    "content": [
+      {
+        "text": "Error: human branch turns submit decisions with continuity_commit; free-text parent delivery is disabled",
+        "type": "text",
+      },
+    ],
+    "isError": true,
+  },
+]
+`;
+
+exports[`keeps the human child turn local after main UI selection: 切到直接模式 > human request context 1`] = `
+[
+  [
+    {
+      "text": "Current runtime context. This snapshot supersedes earlier runtime-context snapshots.
+
+You are a delegated subagent: your permission scope was fixed when you were started and cannot be widened from inside this session — operations that require approval are rejected automatically. When the task needs access beyond that scope, do not retry the denied operation; state the limitation in your reply so the delegating agent can handle it.",
+      "type": "text",
+    },
+  ],
+  [
+    {
+      "text": "[host request context]",
+      "type": "text",
+    },
+  ],
+  [
+    {
+      "text": "受管支线已连接主线。当前连续性账本版本：0。用户确认“带回主线”后再提交决议。",
+      "type": "text",
+    },
+  ],
+  [
+    {
+      "text": "切到直接模式",
+      "type": "text",
+    },
+  ],
+]
+`;
+
+exports[`keeps the human child turn local after main UI selection: 切到直接模式 > parent send rejection 1`] = `
+[
+  {
+    "content": [
+      {
+        "text": "Error: human branch turns submit decisions with continuity_commit; free-text parent delivery is disabled",
+        "type": "text",
+      },
+    ],
+    "isError": true,
+  },
+]
+`;

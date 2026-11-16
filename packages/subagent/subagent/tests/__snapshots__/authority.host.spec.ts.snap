@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`queues one reminder for a real human turn and admits only its correlated human-summary report > human-summary reminder request 1`] = `
+[
+  [
+    "task",
+  ],
+  [
+    "Current runtime context. This snapshot supersedes earlier runtime-context snapshots.
+
+You are a delegated subagent: your permission scope was fixed when you were started and cannot be widened from inside this session — operations that require approval are rejected automatically. When the task needs access beyond that scope, do not retry the denied operation; state the limitation in your reply so the delegating agent can handle it.",
+  ],
+  [
+    "受管支线已连接主线。当前连续性账本版本：0。用户确认“带回主线”后再提交决议。",
+  ],
+  [
+    "human input",
+  ],
+  [
+    "Agent authority-main sent a message: ",
+    "Summarize the human discussion to your parent.",
+    "Report only to your parent using kind=report, report_kind=human-summary, reply_to=<id>. This is a summary, not a continuity decision.",
+  ],
+]
+`;

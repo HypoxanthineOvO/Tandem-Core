@@ -1,0 +1,12 @@
+[
+  {
+    "id": "continuity-only",
+    "name": "cordis:test-tool-subagent",
+    "config": {
+      "provider": "mock",
+      "toolName": "subagent_fork",
+      "delegationTool": false,
+      "continuityToolName": "continuity_commit"
+    }
+  }
+]
